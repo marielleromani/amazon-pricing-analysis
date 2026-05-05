@@ -4,12 +4,12 @@ Análise de pricing estratégico com 551k produtos da Amazon —
 o que os dados revelam sobre descontos, satisfação do cliente
 e segmentação por categoria.
 
-## 📌 Problema de negócio
+## Problema de negócio
 
 > "Descontos altos geram mais vendas — mas a que custo para
 > a percepção de valor e satisfação do cliente?"
 
-## 🔍 Perguntas respondidas
+## Perguntas respondidas
 
 - Qual a relação entre % de desconto e avaliação por categoria?
 - Quais categorias têm melhor equilíbrio ticket × satisfação?
