@@ -1,53 +1,99 @@
-# 🛒 Desconto como Alavanca ou Armadilha?
+# Amazon Pricing Analysis: Desconto como Alavanca ou Armadilha?
 
-Análise de pricing estratégico com 551k produtos da Amazon —
-o que os dados revelam sobre descontos, satisfação do cliente
-e segmentação por categoria.
+## Contexto
 
-## Problema de negócio
+Descontos são uma das estratégias mais usadas para impulsionar vendas.
+Mas nem sempre mais desconto significa mais valor.
 
-> "Descontos altos geram mais vendas — mas a que custo para
-> a percepção de valor e satisfação do cliente?"
+Esse projeto explora como diferentes níveis de desconto se relacionam
+com a percepção do cliente, usando avaliações (ratings) como proxy.
 
-## Perguntas respondidas
+## Problema
 
-- Qual a relação entre % de desconto e avaliação por categoria?
-- Quais categorias têm melhor equilíbrio ticket × satisfação?
-- Existe um "ponto ótimo" de desconto?
+Descontos aumentam conversão no curto prazo, mas podem:
 
-## 📊 Principais achados
+- reduzir margem
+- atrair clientes menos qualificados
+- impactar negativamente a percepção de valor do produto
 
-- Desconto médio do catálogo: **~47%** — não é exceção, é política
-- Produtos com desconto acima de **70%** têm avaliações sistematicamente piores
-- A faixa **20–40%** concentra as melhores avaliações
-- Categorias "Armadilha" desperdiçam budget promocional sem retorno
+A pergunta é simples: até que ponto o desconto ajuda — e quando começa a prejudicar?
+
+## Hipótese
+
+Descontos muito altos (acima de 70%) podem estar associados a pior avaliação média dos produtos.
 
 ## 📈 Visualizações
 
-![Distribuição](fig1_distribuicao.png)
+![Distribuição de Preços e Descontos](fig1_distribuicao.png)
 
-![Categorias](fig2_categorias.png)
+![Top Categorias por Volume e Desconto](fig2_categorias.png)
 
-![Matriz Estratégica](fig7_matriz.png)
+![Matriz Estratégica: Ticket × Satisfação](fig7_matriz.png)
 
-![Ponto Ótimo](fig8_ponto_otimo.png)
+![Avaliação por Faixa de Desconto](fig8_ponto_otimo.png)
 
-## 🗂️ Estrutura do projeto
+## Análise
+
+A análise considera:
+
+- distribuição de descontos no catálogo (551k produtos, 142 categorias)
+- relação entre faixa de desconto e avaliação média
+- segmentação estratégica por perfil de categoria
+
+Os dados foram organizados em faixas de desconto para observar padrões de comportamento.
+
+## Insight Principal
+
+Existe uma tendência clara: quanto maior o desconto, pior a avaliação média do produto.
+
+Produtos com descontos extremos (acima de ~70%) apresentam, de forma consistente,
+avaliações mais baixas.
+
+## Business Decision
+
+Desconto nem sempre é alavanca.
+
+Se o ganho incremental não compensar a perda de margem e o impacto na percepção
+do cliente, ele passa a ser destruição de valor.
+
+Na prática, isso sugere:
+
+- evitar descontos extremos como estratégia padrão
+- testar elasticidade de preço por categoria
+- priorizar margem em vez de volume em determinados cenários
+
+## Limitações
+
+Essa análise é um ponto de partida. Em um cenário real, seria necessário validar:
+
+- margem por produto
+- quanto das vendas é realmente incremental
+- impacto no comportamento do cliente ao longo do tempo (retenção, dependência de desconto)
+
+## Próximos Passos
+
+- rodar testes A/B para medir impacto real de desconto
+- segmentar por categoria e tipo de produto
+- incorporar métricas financeiras (margem, CAC, LTV)
+
+## Estrutura do Projeto
 
 | Arquivo | Descrição |
 |---|---|
-| `amazon_pricing_analysis.ipynb` | Notebook completo com análise |
-| `fig1` a `fig8` | Gráficos gerados |
+| `amazon_pricing_analysis.ipynb` | Análise exploratória completa |
+| `fig1` a `fig8` | Gráficos e visualizações |
 
-## 🛠️ Tecnologias
+## Conclusão
 
-Python · Pandas · Matplotlib · Seaborn · NumPy
+Nem todo crescimento é ganho real.
 
-## 📦 Dataset
+Em alguns casos, parar de dar desconto pode ser a melhor decisão de negócio.
 
-[Amazon Products Sales Dataset 2023](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)
-— 551k produtos, 142 categorias (Kaggle)
+## 🔗 Links
 
-## 📝 Artigo completo
+[📝 Artigo completo no Substack](https://marielleromani.substack.com/p/desconto-como-alavanca-ou-armadilha)  
+[📦 Dataset no Kaggle](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)
 
-[Leia no Substack →](https://marielleromani.substack.com/p/desconto-como-alavanca-ou-armadilha)
+---
+
+*Análise desenvolvida por Marielle Romani | Python · Pandas · Matplotlib · Seaborn*
