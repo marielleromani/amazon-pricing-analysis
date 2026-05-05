@@ -83,11 +83,30 @@ Essa análise é um ponto de partida. Em um cenário real, seria necessário val
 | `amazon_pricing_analysis.ipynb` | Análise exploratória completa |
 | `fig1` a `fig8` | Gráficos e visualizações |
 
-## Conclusão
-
 Nem todo crescimento é ganho real.
 
 Em alguns casos, parar de dar desconto pode ser a melhor decisão de negócio.
+
+## Desenho do Experimento
+
+Para validar se descontos altos realmente destroem valor, eu rodaria um experimento controlado:
+
+- **Grupo teste:** produtos com desconto alto (>70%)
+- **Grupo controle:** produtos similares com desconto moderado
+
+### Métricas:
+- Taxa de conversão  
+- Receita por cliente  
+- Avaliação média  
+- Impacto em margem  
+
+### Objetivo:
+Medir o impacto incremental real do desconto, separando correlação de causalidade.
+
+## Tomada de Decisão
+
+Se descontos altos aumentam conversão, mas reduzem margem e percepção do cliente, 
+eles devem ser usados de forma estratégica — não como padrão.
 
 ## 🔗 Links
 
