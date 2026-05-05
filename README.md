@@ -1,20 +1,15 @@
-## 📈 Visualizações
-
-![Distribuição](fig1_distribuicao.png)
-![Categorias](fig2_categorias.png)
-![Matriz Estratégica](fig7_matriz.png)
-![Ponto Ótimo](fig8_ponto_otimo.png)# Desconto como Alavanca ou Armadilha?
+# 🛒 Desconto como Alavanca ou Armadilha?
 
 Análise de pricing estratégico com 551k produtos da Amazon —
 o que os dados revelam sobre descontos, satisfação do cliente
 e segmentação por categoria.
 
-## Problema de negócio
+## 📌 Problema de negócio
 
 > "Descontos altos geram mais vendas — mas a que custo para
 > a percepção de valor e satisfação do cliente?"
 
-## Perguntas respondidas
+## 🔍 Perguntas respondidas
 
 - Qual a relação entre % de desconto e avaliação por categoria?
 - Quais categorias têm melhor equilíbrio ticket × satisfação?
@@ -27,6 +22,16 @@ e segmentação por categoria.
 - A faixa **20–40%** concentra as melhores avaliações
 - Categorias "Armadilha" desperdiçam budget promocional sem retorno
 
+## 📈 Visualizações
+
+![Distribuição](fig1_distribuicao.png)
+
+![Categorias](fig2_categorias.png)
+
+![Matriz Estratégica](fig7_matriz.png)
+
+![Ponto Ótimo](fig8_ponto_otimo.png)
+
 ## 🗂️ Estrutura do projeto
 
 | Arquivo | Descrição |
@@ -34,11 +39,11 @@ e segmentação por categoria.
 | `amazon_pricing_analysis.ipynb` | Notebook completo com análise |
 | `fig1` a `fig8` | Gráficos gerados |
 
-## Tecnologias
+## 🛠️ Tecnologias
 
 Python · Pandas · Matplotlib · Seaborn · NumPy
 
-## Dataset
+## 📦 Dataset
 
 [Amazon Products Sales Dataset 2023](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)
 — 551k produtos, 142 categorias (Kaggle)
