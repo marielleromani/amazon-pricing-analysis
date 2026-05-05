@@ -1,4 +1,9 @@
-# Desconto como Alavanca ou Armadilha?
+## 📈 Visualizações
+
+![Distribuição](fig1_distribuicao.png)
+![Categorias](fig2_categorias.png)
+![Matriz Estratégica](fig7_matriz.png)
+![Ponto Ótimo](fig8_ponto_otimo.png)# Desconto como Alavanca ou Armadilha?
 
 Análise de pricing estratégico com 551k produtos da Amazon —
 o que os dados revelam sobre descontos, satisfação do cliente
